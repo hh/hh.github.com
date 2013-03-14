@@ -4,7 +4,7 @@
   <title><![CDATA[Category: vagrant | Hippie Hacker]]></title>
   <link href="http://hh.github.com/blog/categories/vagrant/atom.xml" rel="self"/>
   <link href="http://hh.github.com/"/>
-  <updated>2013-03-14T13:14:27-07:00</updated>
+  <updated>2013-03-14T13:23:24-07:00</updated>
   <id>http://hh.github.com/</id>
   <author>
     <name><![CDATA[Hippie Hacker]]></name>
@@ -72,7 +72,7 @@ node['easybake-workstation']['ingredients'].each do |data_bag,attrs|
 
 <p>```</p>
 
-<p>We then search for the desired ingredient and ensure it's in the cache, and eventually set the path to the local file for it.For vagrant we just install the package specified by the ingredient attribute.</p>
+<p>We then search for the desired ingredient and ensure it's in the cache, and eventually set the path to the local file for it.For vagrant we just install the package specified by the ingredients file attribute.</p>
 
 <p>```ruby easybake-workstation/recipes/ingredients.rb https://github.com/easybake-cookbooks/easybake-workstation/blob/master/recipes/ingredients.rb
  query = "version:#{node['easybake-workstation']['ingredients'][data_bag]['version']}"
