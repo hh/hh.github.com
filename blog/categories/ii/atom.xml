@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ii | Hippie Hacker]]></title>
   <link href="http://hh.github.com/blog/categories/ii/atom.xml" rel="self"/>
   <link href="http://hh.github.com/"/>
-  <updated>2013-03-14T13:10:15-07:00</updated>
+  <updated>2013-03-14T13:14:27-07:00</updated>
   <id>http://hh.github.com/</id>
   <author>
     <name><![CDATA[Hippie Hacker]]></name>
@@ -52,13 +52,14 @@ data_bags/vagrant/windows_v1_1_0.json
 
 <p>I <em>could</em> upload those vagrant data_bag/ingredients to a chef server, but for now I just add chef-solo-search to my list of recipes to run. <strong>It would be really interesting that if used as part of a continuous delivery process, imagine automatically integrate third party ingredients as they update...</strong></p>
 
-<p>In my recipes I set some attributes to specify which externally sourced ingredients ingredients I want to include... and optionally the pinned semantic versions:</p>
+<h2><a href="https://github.com/easybake-cookbooks/easybake-workstation">easybake-workstation</a></h2>
+
+<p>In trying to easily bake a devops workstation, I set some attributes to specify which externally sourced ingredients ingredients I want to include... and optionally the pinned semantic versions:</p>
 
 <p><code>ruby easybake-workstation/attributes/default.rb https://github.com/easybake-cookbooks/easybake-workstation/blob/master/attributes/default.rb#L5
 default['easybake-workstation']['ingredients']['vagrant']['desc']='Vagrant'
-</code></p>
-
-<p>By default we use the latest version of each ingredient:</p>
+</code>
+By default we use the latest version of each ingredient:</p>
 
 <p>```ruby easybake-workstation/recipes/ingredients.rb https://github.com/easybake-cookbooks/easybake-workstation/blob/master/recipes/ingredients.rb
 node['easybake-workstation']['ingredients'].each do |data_bag,attrs|

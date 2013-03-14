@@ -146,7 +146,9 @@
 
 <p>I <em>could</em> upload those vagrant data_bag/ingredients to a chef server, but for now I just add chef-solo-search to my list of recipes to run. <strong>It would be really interesting that if used as part of a continuous delivery process, imagine automatically integrate third party ingredients as they update&#8230;</strong></p>
 
-<p>In my recipes I set some attributes to specify which externally sourced ingredients ingredients I want to include&#8230; and optionally the pinned semantic versions:</p>
+<h2><a href="https://github.com/easybake-cookbooks/easybake-workstation">easybake-workstation</a></h2>
+
+<p>In trying to easily bake a devops workstation, I set some attributes to specify which externally sourced ingredients ingredients I want to include&#8230; and optionally the pinned semantic versions:</p>
 
 <figure class='code'><figcaption><span>easybake-workstation/attributes/default.rb</span><a href='https://github.com/easybake-cookbooks/easybake-workstation/blob/master/attributes/default.rb#L5'>link</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">default</span><span class="o">[</span><span class="s1">&#39;easybake-workstation&#39;</span><span class="o">][</span><span class="s1">&#39;ingredients&#39;</span><span class="o">][</span><span class="s1">&#39;vagrant&#39;</span><span class="o">][</span><span class="s1">&#39;desc&#39;</span><span class="o">]=</span><span class="s1">&#39;Vagrant&#39;</span>
