@@ -1,12 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>
+            http://hh.github.com/blog/2013/03/14/vagrant-van-down-by-the-river-plus-fresh-ingredients/
+        </loc>
+        <lastmod>2013-03-14T13:08:35-07:00</lastmod>
+    </url>
+    <url>
         <loc>http://hh.github.com/blog/archives/</loc>
-        <lastmod>2013-03-14T12:21:13-07:00</lastmod>
+        <lastmod>2013-03-14T13:08:35-07:00</lastmod>
     </url>
     <url>
         <loc>http://hh.github.com/</loc>
-        <lastmod>2013-03-14T12:21:13-07:00</lastmod>
+        <lastmod>2013-03-14T13:08:35-07:00</lastmod>
     </url>
     <url>
         <loc>http://hh.github.com/robots.txt</loc>
